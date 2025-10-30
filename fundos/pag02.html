@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleg.css">
+    <link rel="icon" href="../images-_1_.ico">
     <title>Fundo02</title>
     <style>
-        p{
-            font-size: xx-large;
+        div.bloco{
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 10px;
+            background-image: url('img/wallpaper003.jpg');
         }
-        a{
-            text-decoration: none;
+        div#b1{
+            background-position: left top;
         }
-        a:visited{
-            color: blue;
+        div#b2{
+            background-position: left center;
         }
-        a:hover{
-            text-decoration: underline;
-            color:blueviolet
+        div#b3{
+            background-position: right bottom;
+        }
+        div#b4{
+            background-position: center center;
         }
     </style>
-</head>
+   </head>
 <body>
     <h1>Posição de fundo</h1>
+    <p><a href="pag03.html">next</a></p>
+    <p><a href="pag01.html">voltar</a></p>
+    <div class="bloco" id="b1"></div>
+    <div class="bloco" id="b2"></div>
+    <div class="bloco" id="b3"></div>
+    <div class="bloco" id="b4"></div>
 </body>
 </html>
