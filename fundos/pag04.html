@@ -6,8 +6,28 @@
     <link rel="stylesheet" href="styleg.css">
     <link rel="icon" href="../images-_1_.ico">
     <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            position: relative;
+            height: 500px;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: blue;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
-    
+    <section id="container">
+        <article id ='conteudo'></article>
+    </section>
+    <p><a href="pag03.html">voltar</a> você chegou ao fim!</p>
 </body>
 </html>

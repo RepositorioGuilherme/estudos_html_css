@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cordel</title>
-</head>
-<body>
-    <header>
-        Cordel Moderno
-        Por Milton Duarte
-        <a href="https://www.recantodasletras.com.br/poesias/3186743">Por Milton Duarte</a>
-    </header>
-
+Cordel Moderno
+Por Milton Duarte
+[SITE: https://www.recantodasletras.com.br/poesias/3186743]
 
 Estou ficando cansado
 Da tal tecnologia
@@ -76,9 +65,3 @@ Se quiser, faça esse teste
 Dois pontos são dois joelhos
 Seus lábios são aparelhos
 Deixe que Deus interprete.
-
-    <footer>
-        <p>Site desenvolvido por Guilherme Rodrigues Soares durante o curso de html do <a href="#" target="_blank">Curso em vídeo </a></p>
-    </footer>
-</body>
-</html>
