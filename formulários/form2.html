@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <form  action="cadastri.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Sexo:</legend>
+            <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label></input>  <br>
+            <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label></input> <br>
+            <!--<input type="radio" name="sexo" id="isim" checked><label for="isim">Sim, por favor</label></input><br>-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="ba" id="iba" checked><label for="iba">Basquete</label> <br>
+            <input type="checkbox" name="fu" id="ifu"><label for="ifu">Futebol </label><br>
+            <input type="checkbox" name="na" id="ina" checked><label for="ina">Natação </label><br>
+            <input type="checkbox" name="te" id="ite"><label for="ite">Tênis   </label><br>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"></p>
+        <p><input type="reset" value="Limpar"></p>
+    </form>
+    <p><a href="form3.html">Próximo</a></p>
+    <p><a href="form1.html">Voltar</a></p>
+</body>
+</html>

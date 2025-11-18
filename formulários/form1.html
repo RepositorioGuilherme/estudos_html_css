@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        div#sha{
+            border: 1px solid black;
+            width: 450px;
+        }
+    </style>
    </head>
 <body>
-    <form action="cadastri.php" method="post">
-        <p>
-            <label for="itxt">nome:</label>
-            <input type="text" name="txt" id="itxt" required maxlength="30" placeholder="Nome completo" autocomplete="name">  
-        </p>
-        <p>
-            <label for="imedia">Média: </label>
-            <input type="number" class= "imed" name="media" id="imedia" min="0" max="10" placeholder="de 0 a 10" step="0.5" required>
-        </p>
-        <p>
-            <label for="idata">Data:</label>
-            <input type="date" name="data" id="idata">
-        </p>
-        <p>
-            <label for="idia">Dia da prova</label>
-            <input type="datetime-local" name="dia" id="idia">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-        <p><a href="form0.html">voltar</a></p>
-        <p><a href="form02.html">Próximo</a></p>
-    </form>
+    <form  action="cadastri.php" method="post">
+        <fieldset>
+            <legend>Dados de prova:</legend>
+            <p>
+                <label for="itxt">nome:</label>
+                <input type="text" name="txt" id="itxt" required maxlength="30" placeholder="Nome completo" autocomplete="name">  
+            </p>
+            <p>
+                <label for="imedia">Média: </label>
+                <input type="number" class= "imed" name="media" id="imedia" min="0" max="10" placeholder="de 0 a 10" step="0.5" required>
+            </p>
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="idia">Dia da prova</label>
+                <input type="datetime-local" name="dia" id="idia">
+            </p>
+        </div>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            <p><a href="form2.html">Próximo</a></p>
+            <p><a href="form0.html">voltar</a></p>
+        </fieldset>
 </body>
 </html>
