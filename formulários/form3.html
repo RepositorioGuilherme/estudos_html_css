@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastri.php" method="post">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="ini">Nível de Satisfação:</label>
+            <input type="range" name="ni" id="ini" value="10" min="0" max="10">
+        </p>
+
+        <p>
+            <label for="ifo">Foto:</label>
+            <input type="file" name="fo" id="ifo">
+        </p>
+
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ipr">Profissão:</label>
+            <input type="text" name="pr" id="ipr" list="lst" placeholder="Coloque sua Profissão">
+            <datalist id="lst">
+                <option value="DEV">Desenvolvedor</option>
+                <option value="ADM">Administrador</option>
+                <option value="PR">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="ims">Mensagem:</label><br>
+            <textarea name="ms" id="ims" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
