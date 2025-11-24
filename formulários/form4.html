@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+         
+        <p>
+            <label for="nu1">Primeiro Número:</label>
+            <input type="number" name="nu" id="nu1" min="0" required oninput="iso.innerHTML = Number(nu1.value) + Number(nu2.value)">
+        </p>
+        <p>
+            <label for="nu2">Segundo Número:</label>
+            <input type="number" name="nur" id="nu2" required oninput="iso.innerHTML = Number(nu1.value) + Number(nu2.value)">
+        </p>
+
+        <p>
+            <label for="iso">Soma:</label>
+            <output name="os" id="iso">0</output>
+        </p>
+
+        <p>
+            <label for="iano">Qual o ano q você nasceu:</label>
+            <input type="number" name="ano" id="iano" oninput="calIdade()">
+        </p>
+        
+        <p>
+            <label for="ida">Sua idade é:</label>
+            <output id="ida">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+         </p>
+    </form>
+    <p><a href="form4.html">Próximo</a></p>
+    <p><a href="form2.html">Voltar</a></p>
+
+    <script>
+        function calIdade(){
+            let atual = new Date().getFullYear()
+            ida.innerHTML = Number(atual) - Number(iano.value) 
+        }
+    </script>
+</body>
+</html>
