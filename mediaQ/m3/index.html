@@ -6,8 +6,9 @@
     <title>Título da Página</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/mediaq.css">
 </head>
-<body>
+<body onresize="mudouT()">
     <header>
         <h1>Meu site</h1>
         <span class="material-symbols-outlined" id="burger" onclick="clickMenu()">menu</span>
@@ -30,7 +31,14 @@
         </article>
     </main>
     <script>
-        function clickMenu(){
+    function mudouT(){
+        if(window.innerWidth >= 768){
+            mid.style.display = 'block'
+        }else{
+            mid.style.display = 'none'
+        }
+    }
+    function clickMenu(){
             if (mid.style.display == "block"){
                 mid.style.display ="none"
             }else{
