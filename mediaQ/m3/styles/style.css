@@ -16,9 +16,21 @@ header{
     text-align: center;
     padding: 10px;
 }
+span#burger{
+    background-color: rgb(57, 57, 57);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burger:hover{
+    background-color: white;
+    color: black;
+}
 
 menu{
-    display: block;
+    display: none;
     text-align: center;
 }
 
@@ -26,10 +38,11 @@ menu > ul{
     list-style-type: none;
 }
 menu > ul > li{
-    display: inline-block;
+    display: block;
     background-color: rgb(85, 85, 85);
-    padding: 10px;
-    border-radius: 10px;
+    margin-top: 5px;
+    padding: 15px;
+
 }
 
 a {
@@ -38,7 +51,7 @@ a {
 }
 
 menu>ul>li:hover{
-    background-color: black;
+    background-color: rgb(163, 162, 162);
 }
 
 main{
