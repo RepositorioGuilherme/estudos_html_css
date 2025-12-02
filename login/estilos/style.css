@@ -52,8 +52,8 @@ section#login > div#formulario{
     padding: 10px;
 }
 
-input{
-    display: block;
+div#campo{
+    padding: 10px;
 }
 
 input#l{
