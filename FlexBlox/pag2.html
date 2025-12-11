@@ -1,0 +1,62 @@
+<!--
+Eixos (axis)
+
+[1] flex-direction: row
+main-axis →
+cross-axis ↓
+
+[2] flex-direction: row-reverse
+main-axis ←
+cross-axis ↑
+
+[3] flex-direction: column
+main-axis ↓
+cross-axis →
+
+[4] flex-direction: column-reverse
+main-axis ↑
+cross-axis ←
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightsalmon;
+        }
+        main.pai{
+            background-color: aquamarine;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        section.filho{
+            background-color: rgb(0, 185, 247);
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="pai">
+    <main class="pai">
+        <section class="filho">
+            <h1>Teste</h1>
+            <p><a href="pag2.html">Próximo</a></p>
+            <p><a href="index.html">Voltar</a></p>
+        </section>
+    </main>  
+</body>
+</html>
