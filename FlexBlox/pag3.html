@@ -1,0 +1,57 @@
+<!--
+Eixos (axis)
+
+[1] flex-direction: row
+main-axis →
+cross-axis ↓
+
+[2] flex-direction: row-reverse
+main-axis ←
+cross-axis ↑
+
+[3] flex-direction: column
+main-axis ↓
+cross-axis →
+
+[4] flex-direction: column-reverse
+main-axis ↑
+cross-axis ←
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.pai{
+            background-color: lightsalmon;
+            display: flex;
+            height: 400px;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+        }
+
+        div.filho{
+            background-color: aquamarine;
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho">a</div>
+        <div class="filho">b</div>
+        <div class="filho">c</div>
+        <div class="filho">d</div>
+        <div class="filho">e</div>
+    </div>  
+    <p><a href="pag1.html">Próximo</a></p>
+    <p><a href="#"></a></p>
+</body>
+</html>
+ 
